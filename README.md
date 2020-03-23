@@ -8,10 +8,11 @@
 
 Use [asdf](https://asdf-vm.com/) to install Elixir, Phoenix, and Node.js, and if you're working on Windows, follow [Setting Up Docker for Windows and WSL to Work Flawlessly](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly) for Docker.
 
-- Elixir
-- Phoenix
-- npm
-- Docker
+- Erlang/OTP >= 22
+- Elixir >= v1.10.2
+- Phoenix >= v1.4.16
+- npm >= 6.13.7
+- Docker >= 19.03.8
 
 ### Launch development PostgreSQL database with Docker
 
