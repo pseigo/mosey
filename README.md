@@ -1,2 +1,1 @@
-# mosey
-A personalized event aggregator.
+# Mosey.Umbrella
