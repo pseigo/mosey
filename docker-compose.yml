@@ -1,0 +1,11 @@
+# See https://docs.docker.com/compose/compose-file/
+version: "3.7"
+services:
+  postgres:
+    image: postgres:12.2
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: mosey_dev
