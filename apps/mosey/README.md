@@ -1,3 +1,0 @@
-# Mosey
-
-**TODO: Add description**

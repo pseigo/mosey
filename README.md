@@ -1,8 +1,8 @@
 # Mosey
 
-## Development environment
+An event aggregator written with the Phoenix framework.
 
-> For future reference, I used this article to set up the repo -- [Elixir Phoenix with Typescript and React – December 2019 Edition](https://dev.to/aisrael/elixir-phoenix-with-typescript-and-react-december-2019-edition-39l4)
+## Development environment
 
 ### Dependencies
 
@@ -14,9 +14,11 @@ Use [asdf](https://asdf-vm.com/) to install Elixir, Phoenix, and Node.js, and if
 - npm >= 6.13.7
 - Docker >= 19.03.8
 
+> **TIP**: With my Docker for Windows + WSL setup, a lot of obscure issues were solved by restarting Docker via the desktop client.
+
 ### Launch development PostgreSQL database with Docker
 
-To run Postgres in the background, run `docker-compose up -d`.
+To run Postgres in the background, run `docker-compose up -d`. Run `docker-compose down` to shut down the server.
 
 Further reading:
 
