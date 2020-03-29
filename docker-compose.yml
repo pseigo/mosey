@@ -2,6 +2,7 @@
 version: "3.7"
 services:
   postgres:
+    container_name: mosey-db
     image: postgres:12.2
     volumes:
       - db-data:/var/lib/postgresql/data

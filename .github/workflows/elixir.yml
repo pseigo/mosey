@@ -13,12 +13,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup elixir
+    - name: Setup Postgres database
+      run: docker-compose up -d
+    - name: Test database connection
+      run: docker run --network container:mosey-db appropriate/curl -s --retry 10 --retry-connrefused http://localhost:5432/
+    - name: Setup Elixir
       uses: actions/setup-elixir@v1
       with:
         elixir-version: 1.9.4 # Define the elixir version [required]
         otp-version: 22.2 # Define the OTP version [required]
-    - name: Install Dependencies
+    - name: Install dependencies
       run: mix deps.get
-    - name: Run Tests
+    - name: Run tests
       run: mix test
