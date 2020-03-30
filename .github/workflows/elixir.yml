@@ -15,8 +15,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Setup Postgres database
       run: docker-compose up -d
-    - name: Test database connection
-      run: docker run --network container:mosey-db appropriate/curl -s --retry 10 --retry-connrefused http://localhost:5432/
     - name: Setup Elixir
       uses: actions/setup-elixir@v1
       with:
